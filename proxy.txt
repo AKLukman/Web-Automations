@@ -1,0 +1,10 @@
+Types of proxy
+- Residential proxies
+- Data center proxies
+- static residential proixies
+- Mobile proxies
+
+Proxy provider
+- Bright data
+- Oxylabs
+- Decode
