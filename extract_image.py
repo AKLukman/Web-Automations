@@ -1,7 +1,9 @@
+import json
 import random
-
 from playwright.async_api import async_playwright
 import asyncio
+
+from pyautogui import size
 
 USER_AGENTS = [
     # Desktop Browsers
@@ -38,39 +40,58 @@ USER_AGENTS = [
     "(KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
 ]
 
-URL="https://inventory.teamrabbil.com/"
+URL ="https://rabbil.com"
 
-data ={
-        "bytes": 0 
-
-    }
 async def main():
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(user_agent=random.choice(USER_AGENTS))
-        page = await context.new_page()
+        sizes={}
+        images=[]
 
-        print("Processing...")
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            context = await browser.new_context(user_agent=random.choice(USER_AGENTS))
+            page = await context.new_page()
 
-        # add size for every response
-        async def add_size(res):
-            body = await res.body()
-            data["bytes"] += len(body)
+            print("Processing...")
 
-        page.on("response",add_size)
+            # Network
+            async def add_size(res):
+                if res.request.resource_type =="image":
+                    body = await res.body()
+                    sizes[res.url] = len(body)
 
-        await page.goto(URL,wait_until="domcontentloaded")
+            page.on("response",add_size)
+            await page.goto(URL,wait_until='load')
 
-        # convert sizes
-        total_kb = round(data["bytes"]/1024,2)
-        total_mb = round(total_kb/1024,2)
 
-        print(f"Total page size: {total_kb} kb")
-        print(f"Total page size: {total_mb} mb")
 
-        await page.wait_for_timeout(3000)
-        print("Done!")
-        await browser.close()
+            # DOM
+            domImages = await page.evaluate("""
+            ()=> Array.from(document.images).map(img=>({
+                    url:img.src,
+                    width: img.naturalWidth,
+                    height: img.naturalHeight
+                }))
+            """)
 
-        
+            # Merge Size KB
+            for eachImage in domImages:
+                 byte_value=sizes.get(eachImage["url"])
+                 eachImage['size_kb']=round((byte_value) / 1024,2)
+                 images.append(eachImage)
+
+            # Save The Output
+            with open("images.json","w",encoding="utf-8") as f:
+                json.dump(images,f,indent=2,ensure_ascii=False)
+
+            print("Done")
+
+            await browser.close()
+
+
 asyncio.run(main())
+
+
+
+
+
+

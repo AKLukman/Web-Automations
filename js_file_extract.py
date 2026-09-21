@@ -1,7 +1,9 @@
+import json
 import random
-
 from playwright.async_api import async_playwright
 import asyncio
+
+from pyautogui import size
 
 USER_AGENTS = [
     # Desktop Browsers
@@ -38,39 +40,51 @@ USER_AGENTS = [
     "(KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
 ]
 
-URL="https://inventory.teamrabbil.com/"
 
-data ={
-        "bytes": 0 
+URL = "https://amazon.com/"
 
-    }
 async def main():
+    sizes = {}
+    js_files = []
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(user_agent=random.choice(USER_AGENTS))
         page = await context.new_page()
 
-        print("Processing...")
+        print("Processing JS files...")
 
-        # add size for every response
+        # Capture JS file sizes
         async def add_size(res):
-            body = await res.body()
-            data["bytes"] += len(body)
+            if res.request.resource_type == "script":
+                try:
+                    body = await res.body()
+                    sizes[res.url] = len(body)
+                except:
+                    pass
 
-        page.on("response",add_size)
+        page.on("response", add_size)
+        await page.goto(URL, wait_until='load')
 
-        await page.goto(URL,wait_until="domcontentloaded")
+        # Collect JS URLs from DOM
+        dom_js = await page.evaluate("""
+            () => Array.from(document.scripts)
+                .map(s => ({
+                    url: s.src
+                }))
+        """)
 
-        # convert sizes
-        total_kb = round(data["bytes"]/1024,2)
-        total_mb = round(total_kb/1024,2)
+        # Merge downloaded JS size
+        for file in dom_js:
+            byte_value = sizes.get(file["url"])
+            file["size_kb"] = round(byte_value / 1024, 2) if byte_value else None
+            js_files.append(file)
 
-        print(f"Total page size: {total_kb} kb")
-        print(f"Total page size: {total_mb} mb")
+        # Save JSON output
+        with open("js_files.json", "w", encoding="utf-8") as f:
+            json.dump(js_files, f, indent=2, ensure_ascii=False)
 
-        await page.wait_for_timeout(3000)
-        print("Done!")
+        print("Done")
         await browser.close()
 
-        
 asyncio.run(main())

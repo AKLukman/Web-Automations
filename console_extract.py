@@ -40,10 +40,7 @@ USER_AGENTS = [
 
 URL="https://inventory.teamrabbil.com/"
 
-data ={
-        "bytes": 0 
 
-    }
 async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -52,21 +49,9 @@ async def main():
 
         print("Processing...")
 
-        # add size for every response
-        async def add_size(res):
-            body = await res.body()
-            data["bytes"] += len(body)
+        page.on("console",lambda msg:print(msg.text))
 
-        page.on("response",add_size)
-
-        await page.goto(URL,wait_until="domcontentloaded")
-
-        # convert sizes
-        total_kb = round(data["bytes"]/1024,2)
-        total_mb = round(total_kb/1024,2)
-
-        print(f"Total page size: {total_kb} kb")
-        print(f"Total page size: {total_mb} mb")
+        await page.goto(URL,wait_until="load")
 
         await page.wait_for_timeout(3000)
         print("Done!")
