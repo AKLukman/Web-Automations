@@ -1,0 +1,10 @@
+- Per-IP rate limit — Nginx/Cloudflare-এ পথভিত্তিক রেট লিমিট লাগাও।
+- Per-account attempts — Redis-এ ফোন/ইমেইল ভিত্তিক কাউন্টার (উদাহরণ: 5 চেষ্টা / 10 মিনিট)।
+- Temporary lockout — বেশি চেষ্টা হলে (যেমন 5) account ১৫-৩০ মিনিট লক করো।
+- Progressive delay — ব্যর্থতার সাথে বিরতি বাড়াও (২s → ৫s → ১৫s)।
+- CAPTCHA — Nth (৩–৫) ব্যর্থতার পরে CAPTCHA দেখাও।
+- OTP life & resend limit — OTP মেয়াদ ছোট (e.g., 2 min) এবং রিসেন্ড মাত্রা সীমিত রাখো।
+- Generic error messages — “Invalid code” টাইপের মেসেজ রাখো (user enumeration এড়াতে)।
+- Auto-ban abusive IPs — fail2ban/Cloudflare firewall দিয়ে repeated offenders ব্লক করো।
+- Logging & Alerts — failed attempts লগ করো এবং স্পাইক এলে অ্যালার্ট পাঠাও।
+- Verify securely — OTP চেক constant-timeভাবে করো; সফল হলে attempts রিসেট করো।
