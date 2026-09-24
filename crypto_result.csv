@@ -1,0 +1,301 @@
+name,symbol,price,1h,24h,7d
+"Bitcoin
+                      
+  BTC",BTC,"$84,307.93",0.0%,0.0%,0.0%
+"Ethereum
+                      
+  ETH",ETH,"$2,685.25",0.0%,0.0%,0.0%
+"Tether
+                      
+  USDT",USDT,$0.9998,0.0%,0.0%,0.0%
+"BNB
+                      
+  BNB",BNB,$776.89,0.1%,0.1%,0.1%
+"XRP
+                      
+  XRP",XRP,$1.54,0.7%,0.7%,0.7%
+"USDC
+                      
+  USDC",USDC,$0.9998,0.0%,0.0%,0.0%
+"Solana
+                      
+  SOL",SOL,$116.53,0.1%,0.1%,0.1%
+"TRON
+                      
+  TRX",TRX,$0.3402,0.1%,0.1%,0.1%
+"Zcash
+                      
+  ZEC",ZEC,"$1,536.67",0.1%,0.1%,0.1%
+"Figure Heloc
+                      
+  FIGR_HELOC",FIGR_HELOC,$1.02,1.7%,1.7%,1.7%
+"Hyperliquid
+                      
+  HYPE",HYPE,$92.25,0.8%,0.8%,0.8%
+"Dogecoin
+                      
+  DOGE",DOGE,$0.09544,0.1%,0.1%,0.1%
+"Monero
+                      
+  XMR",XMR,$566.95,0.5%,0.5%,0.5%
+"WhiteBIT Coin
+                      
+  WBT",WBT,$84.38,0.0%,0.0%,0.0%
+"Chainlink
+                      
+  LINK",LINK,$13.24,0.8%,0.8%,0.8%
+"USDS
+                      
+  USDS",USDS,$0.9999,0.0%,0.0%,0.0%
+"Cardano
+                      
+  ADA",ADA,$0.2477,0.7%,0.7%,0.7%
+"Rain
+                      
+  RAIN",RAIN,$0.01203,0.4%,0.4%,0.4%
+"LEO Token
+                      
+  LEO",LEO,$8.92,0.1%,0.1%,0.1%
+"Stellar
+                      
+  XLM",XLM,$0.2148,1.1%,1.1%,1.1%
+"Bitcoin Cash
+                      
+  BCH",BCH,$338.79,0.8%,0.8%,0.8%
+"NEAR Protocol
+                      
+  NEAR",NEAR,$4.56,1.0%,1.0%,1.0%
+"Uniswap
+                      
+  UNI",UNI,$9.15,0.6%,0.6%,0.6%
+"Litecoin
+                      
+  LTC",LTC,$71.36,0.6%,0.6%,0.6%
+"Ethena USDe
+                      
+  USDE",USDE,$0.9998,0.0%,0.0%,0.0%
+"Avalanche
+                      
+  AVAX",AVAX,$10.45,1.5%,1.5%,1.5%
+"Dai
+                      
+  DAI",DAI,$0.9998,0.0%,0.0%,0.0%
+"Canton
+                      
+  CC",CC,$0.1126,1.0%,1.0%,1.0%
+"USD1
+                      
+  USD1",USD1,$0.9992,0.0%,0.0%,0.0%
+"Sui
+                      
+  SUI",SUI,$1.01,0.5%,0.5%,0.5%
+"Hedera
+                      
+  HBAR",HBAR,$0.09335,1.0%,1.0%,1.0%
+"Gram (prev. Toncoin)
+                      
+  GRAM",GRAM,$1.41,0.2%,0.2%,0.2%
+"Shiba Inu
+                      
+  SHIB",SHIB,$0.055802,0.1%,0.1%,0.1%
+"Bittensor
+                      
+  TAO",TAO,$295.79,1.2%,1.2%,1.2%
+"Global Dollar
+                      
+  USDG",USDG,$1,0.0%,0.0%,0.0%
+"Cronos
+                      
+  CRO",CRO,$0.06286,0.5%,0.5%,0.5%
+"MemeCore
+                      
+  M",M,$1.22,0.8%,0.8%,0.8%
+"PayPal USD
+                      
+  PYUSD",PYUSD,$0.9999,0.0%,0.0%,0.0%
+"Tether Gold
+                      
+  XAUT",XAUT,"$4,264.21",0.2%,0.2%,0.2%
+"Ondo
+                      
+  ONDO",ONDO,$0.5204,2.8%,2.8%,2.8%
+"OKB
+                      
+  OKB",OKB,$119.75,0.2%,0.2%,0.2%
+"Bitway
+                      
+  BTW",BTW,$0.9205,7.0%,7.0%,7.0%
+"Circle USYC
+                      
+  USYC",USYC,$1.14,0.0%,0.0%,0.0%
+"Ripple USD
+                      
+  RLUSD",RLUSD,$1.00,0.0%,0.0%,0.0%
+"BlackRock USD Institutional Digital Liquidity Fund
+                      
+  BUIDL",BUIDL,$1,0.0%,0.0%,0.0%
+"Ondo US Dollar Yield
+                      
+  USDY",USDY,$1.15,0.2%,0.2%,0.2%
+"Ethena
+                      
+  ENA",ENA,$0.2231,1.0%,1.0%,1.0%
+"Mantle
+                      
+  MNT",MNT,$0.6809,0.4%,0.4%,0.4%
+"Aave
+                      
+  AAVE",AAVE,$144.22,0.2%,0.2%,0.2%
+"Polkadot
+                      
+  DOT",DOT,$1.16,0.5%,0.5%,0.5%
+"Morpho
+                      
+  MORPHO",MORPHO,$2.81,0.1%,0.1%,0.1%
+"Aster
+                      
+  ASTER",ASTER,$0.7114,0.1%,0.1%,0.1%
+"Pepe
+                      
+  PEPE",PEPE,$0.054422,0.1%,0.1%,0.1%
+"PAX Gold
+                      
+  PAXG",PAXG,"$4,263.42",0.2%,0.2%,0.2%
+"Pump.fun
+                      
+  PUMP",PUMP,$0.003855,0.2%,0.2%,0.2%
+"World Liberty Financial
+                      
+  WLFI",WLFI,$0.05646,0.3%,0.3%,0.3%
+"Internet Computer
+                      
+  ICP",ICP,$3.11,0.2%,0.2%,0.2%
+"Sky
+                      
+  SKY",SKY,$0.07378,0.6%,0.6%,0.6%
+"Worldcoin
+                      
+  WLD",WLD,$0.438,0.2%,0.2%,0.2%
+"HTX DAO
+                      
+  HTX",HTX,$0.051727,0.2%,0.2%,0.2%
+"USDD
+                      
+  USDD",USDD,$0.9993,0.0%,0.0%,0.0%
+"Ethereum Classic
+                      
+  ETC",ETC,$9.47,2.5%,2.5%,2.5%
+"Venice Token
+                      
+  VVV",VVV,$30.90,1.1%,1.1%,1.1%
+"Arbitrum
+                      
+  ARB",ARB,$0.217,0.3%,0.3%,0.3%
+"Spiko Amundi Overnight Swap Fund (EUR)
+                      
+  EURSAFO",EURSAFO,$1.15,0.0%,0.0%,0.0%
+"United Stables
+                      
+  U",U,$0.9994,0.0%,0.0%,0.0%
+"USDGO
+                      
+  USDGO",USDGO,$1.00,0.0%,0.0%,0.0%
+"Bitget Token
+                      
+  BGB",BGB,$1.97,2.6%,2.6%,2.6%
+"Falcon USD
+                      
+  USDF",USDF,$0.9956,0.0%,0.0%,0.0%
+"BFUSD
+                      
+  BFUSD",BFUSD,$0.9997,0.0%,0.0%,0.0%
+"Quant
+                      
+  QNT",QNT,$90.48,2.6%,2.6%,2.6%
+"Lighter
+                      
+  LIT",LIT,$5.06,3.6%,3.6%,3.6%
+"POL (ex-MATIC)
+                      
+  POL",POL,$0.1089,1.2%,1.2%,1.2%
+"Gate
+                      
+  GT",GT,$10.78,0.5%,0.5%,0.5%
+"Kaspa
+                      
+  KAS",KAS,$0.03972,0.5%,0.5%,0.5%
+"Algorand
+                      
+  ALGO",ALGO,$0.1122,0.1%,0.1%,0.1%
+"KuCoin
+                      
+  KCS",KCS,$7.28,0.0%,0.0%,0.0%
+"Jupiter
+                      
+  JUP",JUP,$0.3006,0.9%,0.9%,0.9%
+"Blockchain Capital
+                      
+  BCAP",BCAP,$107.53,0.0%,0.0%,0.0%
+"Pi Network
+                      
+  PI",PI,$0.08615,0.0%,0.0%,0.0%
+"Render
+                      
+  RENDER",RENDER,$1.86,0.0%,0.0%,0.0%
+"Cosmos Hub
+                      
+  ATOM",ATOM,$1.78,0.0%,0.0%,0.0%
+"JUST
+                      
+  JST",JST,$0.1133,0.1%,0.1%,0.1%
+"PancakeSwap
+                      
+  CAKE",CAKE,$2.74,0.0%,0.0%,0.0%
+"NEXO
+                      
+  NEXO",NEXO,$0.8688,0.8%,0.8%,0.8%
+"Filecoin
+                      
+  FIL",FIL,$0.996,0.2%,0.2%,0.2%
+"Akedo
+                      
+  AKE",AKE,$0.03567,1.5%,1.5%,1.5%
+"Dash
+                      
+  DASH",DASH,$62.95,0.1%,0.1%,0.1%
+"VeChain
+                      
+  VET",VET,$0.009345,0.4%,0.4%,0.4%
+"Injective
+                      
+  INJ",INJ,$8.02,1.4%,1.4%,1.4%
+"Spiko EU T-Bills Money Market Fund
+                      
+  EUTBL",EUTBL,$1.21,0.0%,0.0%,0.0%
+"Invesco Short Duration US Government Securities Fund
+                      
+  USTB",USTB,$11.22,0.0%,0.0%,0.0%
+"Aptos
+                      
+  APT",APT,$0.8067,0.0%,0.0%,0.0%
+"​​Stable
+                      
+  STABLE",STABLE,$0.02633,0.0%,0.0%,0.0%
+"GHO
+                      
+  GHO",GHO,$0.9987,0.0%,0.0%,0.0%
+"Aerodrome Finance
+                      
+  AERO",AERO,$0.6938,0.7%,0.7%,0.7%
+"Ether.fi
+                      
+  ETHFI",ETHFI,$0.6754,0.3%,0.3%,0.3%
+"Flare
+                      
+  FLR",FLR,$0.007203,0.3%,0.3%,0.3%
+"Pudgy Penguins
+                      
+  PENGU",PENGU,$0.009786,1.1%,1.1%,1.1%
+"Beldex
+                      
+  BDX",BDX,$0.07726,0.3%,0.3%,0.3%
