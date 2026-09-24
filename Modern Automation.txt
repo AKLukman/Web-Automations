@@ -1,0 +1,53 @@
+
+Playwright
+
+1. Auto-wait Mechanism
+AJAX, Element, DOM
+
+2. Faster than Selenium
+Async architecture
+
+3. Multi-browser Support
+Chromium+Firefox+WebKit
+
+💡Headless + Headful Mode
+Silent scraping,
+
+5. Async/Await Concurrency
+100+
+
+6. Built-in Debugging Tools
+- video recording, screenshots, JS Code Injection, Console
+
+7. Strong Network Control
+- Request/response intercept, modify, advanced scraping
+
+8. File Upload + Download+ Form Post
+- Automation, action
+
+9. Lazy Load Handling
+- Infinite scroll, lazy loading on scroll
+
+10. WaitForSelector Reliability
+- wait until element load
+
+11. Shadow DOM Support
+- Modern websites where Selenium fails-> Playwright succeeds
+
+12. iFrame Handling
+- Smartly Handle
+
+13. Parallel Execution
+- High-scale scraping SaaS
+
+14. Storage
+Session, Local, Cookies Use
+
+15. SPA Compatibility
+- React, Next, Vue, JS Driven -> Playwright succeeds
+
+16. Anti-Bot & Human-Behavior Features
+- Human-like Mouse Movement
+- Human-like Typing
+💡Realistic Scrolling
+
