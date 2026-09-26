@@ -1,0 +1,107 @@
+Step01: Choose VPS Server Provider
+    - Hostinger
+    - Contabo
+    - Ovh
+    - vultr
+    - aws ec2
+
+================================
+Step02: VPS PC - RAM,CPU,Storage
+    - 4 Core
+    - 8 GB
+
+================================
+Step03: VPS OS and others properties
+    - Ubontu 22.04
+
+================================
+Step04:VPS
+username: root
+password: PythonAutomation2050
+
+================================
+Step05: VPS Purchase
+IP Address: 84.247.147.56
+username: root
+password: PythonAutomation2050
+
+================================
+
+Step06: VPS Panel Installation
+- Cpanel
+- PlexPanel
+- CyberPanel
+- aapanel
+
+================================
+
+Step07: aapnel Installation
+- URL=https://www.aapanel.com/script/install_7.0_en.sh && if [ -f /usr/bin/curl ];then curl -ksSO "$URL" ;else wget --no-check-certificate -O install_7.0_en.sh "$URL";fi;bash install_7.0_en.sh ipssl
+
+aaPanel Internet Address: https://84.247.147.56:11442/16319392
+aaPanel Internal Address: https://84.247.147.56:11442/16319392
+username: evozfyzw
+password: a8d627fd
+
+================================
+Step08: Prepare Server For Automation & Scrapping Project
+
+- Check Python
+python3 --version
+
+- Install Python
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+sudo apt update
+sudo apt install -y python3.12 python3.12-venv
+python3.12 --version
+
+- Check Outbound
+Ping test: ping -c 3 8.8.8.8
+DNS test: ping -c 3 google.com
+Curl test: curl -I https://google.com curl -I https://rabbil.com
+
+- If Outbound Not Working
+sudo ufw default allow outgoing
+
+- Virtual Display
+sudo apt install -y xvfb
+
+
+================================
+
+Step09: Keep Project In VPS Server
+
+python3.12 -m venv venv
+source venv/bin/activate
+pip install playwright
+playwright install chromium
+
+
+================================
+
+Step10: Run Automation & Scrapping Script Form Server
+
+source venv/bin/activate
+headless=false - xvfb-run python3 main.py
+headless=true - python3 main.py
+
+
+sudo apt-get install -y \
+  libatk1.0-0 \
+  libatk-bridge2.0-0 \
+  libcups2 \
+  libxkbcommon0 \
+  libxdamage1 \
+  libxrandr2 \
+  libgbm1 \
+  libpango-1.0-0 \
+  libasound2 \
+  libatspi2.0-0 \
+  libgtk-3-0 \
+  libxshmfence1 \
+  libnss3 \
+  libxcomposite1 \
+  libxrender1 \
+  libgles2 \
+  libdrm2
+
